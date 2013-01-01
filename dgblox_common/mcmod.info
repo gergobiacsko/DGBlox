@@ -1,0 +1,14 @@
+[
+{
+	"modid": "DG_Blox",
+	"name": "Colored Blox",
+	"description": "This is a mod for Minecraft which adds all 16 colors of stone.",
+	"version": "1.01",
+	"credits": "By DylanGore",
+	"logoFile": "",
+	"url": "http://www.dylangore.tk",
+	"authors": [ "DylanGore" ],
+	"dependencies": [
+		"mod_MinecraftForge"
+	]
+}
