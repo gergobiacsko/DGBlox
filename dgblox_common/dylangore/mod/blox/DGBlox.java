@@ -17,7 +17,7 @@ import dylangore.mod.blox.ModBlocks.DGStoneBlock;
 import dylangore.mod.blox.ModBlocks.DGStoneBlock_Item;
 
 //Mod Info
-@Mod(modid = "DGBlox", name = "DylanGore's Colored Blox", version = "1.01")
+@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.02")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class DGBlox {
 	// * Defining Blocks, Items and Creative Tabs using a "public static"
