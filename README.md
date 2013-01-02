@@ -1,7 +1,7 @@
 ## Welcome to DGBlox Mod!
 Setup MCP was done mostly by the people who update How to Compile for Beginners on the wiki, I just updated/changed it a bit.  Some credit goes to BuildCraft's README.md, which I based this README off of.
 
-The Minecraft Forums page can be found [here] (http://www.minecraftforum.net/topic/1585823-146-dylangores-mods/
+The Minecraft Forums page can be found [here] (http://www.minecraftforum.net/topic/1585823-146-dylangores-mods/).
 
 ### Compiling DGBloxMod
 IMPORTANT: This is not guaranteed to work as it has not been tested extensively (Linux and Windows tested).
