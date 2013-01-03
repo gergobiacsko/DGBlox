@@ -19,7 +19,7 @@ import dylangore.mod.blox.ModBlocks.DGCobbleBlock;
 import dylangore.mod.blox.ModBlocks.DGCobbleBlock_Item;
 
 //Mod Info
-@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.1")
+@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.1.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class DGBlox {
 	// * Defining Blocks, Items and Creative Tabs using a "public static"
@@ -71,93 +71,107 @@ public class DGBlox {
 			ItemStack DyeGreen = new ItemStack(Item.dyePowder, 1, 4);
 			ItemStack DyeRed = new ItemStack(Item.dyePowder, 1, 1);
 			ItemStack DyeBlack = new ItemStack(Item.dyePowder, 1, ix);
-			// Colored Stone Stacks
-			ItemStack DGStoneStackWhite = new ItemStack(DGStoneBlock, 1, ix);
-			// Colored Stone Blocks
-			ItemStack StoneWhite = new ItemStack(Block.stone, 1, ix);
-			ItemStack StoneOrange = new ItemStack(Block.stone, 2, ix);
-			ItemStack StoneMagenta = new ItemStack(Block.stone, 3, ix);
-			ItemStack StoneLightBlue = new ItemStack(Block.stone, 4, ix);
-			ItemStack StoneYellow = new ItemStack(Block.stone, 5, ix);
-			ItemStack StoneLightGreen = new ItemStack(Block.stone, 6, ix);
-			ItemStack StonePink = new ItemStack(Block.stone, 7, ix);
-			ItemStack StoneDarkGrey = new ItemStack(Block.stone, 8, ix);
-			ItemStack StoneLightGrey = new ItemStack(Block.stone, 9, ix);
-			ItemStack StoneCyan = new ItemStack(Block.stone, 10, ix);
-			ItemStack StonePurple = new ItemStack(Block.stone, 11, ix);
-			ItemStack StoneBlue = new ItemStack(Block.stone, 12, ix);
-			ItemStack StoneBrown = new ItemStack(Block.stone, 13, ix);
-			ItemStack StoneGreen = new ItemStack(Block.stone, 14, ix);
-			ItemStack StoneRed = new ItemStack(Block.stone, 15, ix);
-			ItemStack StoneBlack = new ItemStack(Block.stone, 16, ix);
+			// Colored Stone
+			ItemStack DGStoneStack = new ItemStack(DGStoneBlock, 1, ix);
+		
 
+			LanguageRegistry.addName(DGStoneStack,DGStoneBlockNames[DGStoneStack.getItemDamage()]);
 			// * White Stone
-			LanguageRegistry.addName(DGStoneStackWhite,
-					DGStoneBlockNames[DGStoneStackWhite.getItemDamage()]);
-			FurnaceRecipes.smelting().addSmelting(DGStoneBlock.blockID, 0, VanStone , 0.1f);
-
-			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 1),
-					StoneWhite, DyeWhite);
+			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 0),
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone,DyeWhite);
 
 			// * Orange Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 1),
-					StoneOrange, DyeOrange);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeOrange);
 
 			// * Magenta Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 2),
-					StoneMagenta, DyeMagenta);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeMagenta);
 
 			// * Light Blue Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 3),
-					StoneLightBlue, DyeLightBlue);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeLightBlue);
 
 			// * Yellow Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 4),
-					StoneYellow, DyeYellow);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeYellow);
 
 			// * Light Green Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 5),
-					StoneLightGreen, DyeLightGreen);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeLightGreen);
 
 			// * Pink Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 6),
-					StonePink, DyePink);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyePink);
 
 			// * Dark Grey Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 7),
-					StoneDarkGrey, DyeDarkGrey);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeDarkGrey);
 
 			// * Light Grey Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 8),
-					StoneLightGrey, DyeLightGrey);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeLightGrey);
 
 			// * Cyan Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 9),
-					StoneCyan, DyeCyan);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeCyan);
 
 			// * Purple Stone
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 10),
-					StonePurple, DyePurple);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyePurple);
 
 			// * Blue Stone (Shapeless)
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 11),
-					StoneBlue, DyeBlue);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					
+					Block.stone,Block.stone, DyeBlue);
 
 			// * Brown Stone (Shapeless)
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 12),
-					StoneBrown, DyeBrown);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeBrown);
 
 			// * Green (Shapeless)
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 13),
-					StoneGreen, DyeGreen);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeGreen);
 
 			// * Red Stone (Shapeless)
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 14),
-					StoneRed, DyeRed);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeRed);
 
 			// * Black Stone (Shapeless)
 			GameRegistry.addShapelessRecipe(new ItemStack(DGStoneBlock, 1, 15),
-					StoneDarkGrey, DyeDarkGrey);
+					Block.stone,Block.stone,Block.stone,
+					Block.stone, Block.stone,Block.stone,
+					Block.stone,Block.stone, DyeDarkGrey);
 		}
 
 		// Colored Cobblestone
@@ -182,95 +196,94 @@ public class DGBlox {
 			ItemStack DyeGreen = new ItemStack(Item.dyePowder, 1, 4);
 			ItemStack DyeRed = new ItemStack(Item.dyePowder, 1, 1);
 			ItemStack DyeBlack = new ItemStack(Item.dyePowder, 1, ix);
-			// Colored Cobble Stacks
-			ItemStack DGCobbleStackWhite = new ItemStack(DGCobbleBlock, 1, ix);
-			// Colored Cobble Blocks
-			ItemStack CobbleWhite = new ItemStack(Block.cobblestone, 1, ix);
-			ItemStack CobbleOrange = new ItemStack(Block.cobblestone, 2, ix);
-			ItemStack CobbleMagenta = new ItemStack(Block.cobblestone, 3, ix);
-			ItemStack CobbleLightBlue = new ItemStack(Block.cobblestone, 4, ix);
-			ItemStack CobbleYellow = new ItemStack(Block.cobblestone, 5, ix);
-			ItemStack CobbleLightGreen = new ItemStack(Block.cobblestone, 6, ix);
-			ItemStack CobblePink = new ItemStack(Block.cobblestone, 7, ix);
-			ItemStack CobbleDarkGrey = new ItemStack(Block.cobblestone, 8, ix);
-			ItemStack CobbleLightGrey = new ItemStack(Block.cobblestone, 9, ix);
-			ItemStack CobbleCyan = new ItemStack(Block.cobblestone, 10, ix);
-			ItemStack CobblePurple = new ItemStack(Block.cobblestone, 11, ix);
-			ItemStack CobbleBlue = new ItemStack(Block.cobblestone, 12, ix);
-			ItemStack CobbleBrown = new ItemStack(Block.cobblestone, 13, ix);
-			ItemStack CobbleGreen = new ItemStack(Block.cobblestone, 14, ix);
-			ItemStack CobbleRed = new ItemStack(Block.cobblestone, 15, ix);
-			ItemStack CobbleBlack = new ItemStack(Block.cobblestone, 16, ix);
-
-			// * White Stone
-			LanguageRegistry.addName(DGCobbleStackWhite,
-					DGCobbleBlockNames[DGCobbleStackWhite.getItemDamage()]);
+			// Colored Cobble
+			ItemStack DGCobbleStack = new ItemStack(DGCobbleBlock, 1, ix);
+			// * White
+			LanguageRegistry.addName(DGCobbleStack,
+					DGCobbleBlockNames[DGCobbleStack.getItemDamage()]);
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 0),
-					CobbleWhite, DyeWhite);
-
-			// * Orange Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,DyeWhite);
+			// * Orange
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 1),
-					CobbleOrange, DyeOrange);
-
-			// * Magenta Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeOrange);
+			// * Magenta
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 2),
-					CobbleMagenta, DyeMagenta);
-
-			// * Light Blue Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeMagenta);
+			// * LightBlue
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 3),
-					CobbleLightBlue, DyeLightBlue);
-
-			// * Yellow Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeLightBlue);
+			// * Yellow
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 4),
-					CobbleYellow, DyeYellow);
-
-			// * Light Green Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeYellow);
+			// * LightGrey
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 5),
-					CobbleLightGreen, DyeLightGreen);
-
-			// * Pink Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeLightGreen);
+			// * Pink
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 6),
-					CobblePink, DyePink);
-
-			// * Dark Grey Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyePink);
+			// * Dark
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 7),
-					CobbleDarkGrey, DyeDarkGrey);
-
-			// * Light Grey Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeDarkGrey);
+			// * Light
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 8),
-					CobbleLightGrey, DyeLightGrey);
-
-			// * Cyan Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeLightGrey);
+			// * Cyan
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 9),
-					CobbleCyan, DyeCyan);
-
-			// * Purple Stone
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeCyan);
+			// * Purple
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 10),
-					CobblePurple, DyePurple);
-
-			// * Blue Stone (Shapeless)
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyePurple);
+			// * Blue
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 11),
-					CobbleBlue, DyeBlue);
-
-			// * Brown Stone (Shapeless)
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeBlue);
+			// * Brown
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 12),
-					CobbleBrown, DyeBrown);
-
-			// * Green (Shapeless)
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeBrown);
+			// * Green
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 13),
-					CobbleGreen, DyeGreen);
-
-			// * Red Stone (Shapeless)
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeGreen);
+			// * Red 
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 14),
-					CobbleRed, DyeRed);
-
-			// * Black Stone (Shapeless)
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeRed);
+			// * Black 
 			GameRegistry.addShapelessRecipe(new ItemStack(DGCobbleBlock, 1, 15),
-					CobbleDarkGrey, DyeDarkGrey);
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone,Block.cobblestone,
+					Block.cobblestone,Block.cobblestone, DyeDarkGrey);
 		}
-			// * Language Registry (Registering Names, tooltips, etc.
-			LanguageRegistry.instance().addStringLocalization("itemGroup.BloxTab",
-					"en_US", "DG Colored Blox");
+		// * Language Registry (Registering Names, tooltips, etc.
+		LanguageRegistry.instance().addStringLocalization("itemGroup.BloxTab",
+				"en_US", "DG Colored Blox");
 	}
 
 	@Mod.PreInit
@@ -278,11 +291,11 @@ public class DGBlox {
 		// Config File
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
-		int DGStoneBlockID = config.getBlock("Colored Stone" , 502 ).getInt();
-		boolean BloxTabEnabled = config.get("Settings", "Enable the DGBlox Creative Tab (Currently does not do anything )", true).getBoolean(true);
+		int DGStoneBlockID = config.get("Colored Blox","Colored Stone" , 502 ).getInt();
+		int DGCobbleBlockID = config.get("Colored Blox","Colored Cobblestone" , 503 ).getInt();
 		config.save();
 
 		//Console Print
-		System.out.println("DylanGore's Blox Mod has been loaded successfuly");
+		System.out.println("DylanGore's Blox Mod has been identified and will be loaded");
 	}
 }
