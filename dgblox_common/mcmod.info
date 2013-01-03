@@ -1,14 +1,21 @@
-[
 {
-	"modid": "DGBlox",
-	"name": "DGBlox Mod",
-	"description": "This is a mod for Minecraft which adds all 16 colors of stone and cobblestone!.",
-	"version": "1.1.1",
-	"credits": "By DylanGore",
-	"logoFile": "",
-	"url": "http://www.minecraftforum.net/topic/1585823-146-dylangores-mods/",
-	"authors": [ "DylanGore" ],
-	"dependencies": [
-		"mod_MinecraftForge"
-	]
+  "modinfoversion": 3,
+  "modlist": [{
+    "modid": "DGBlox",
+    "name": "DylanGore's Blox Mod",
+    "description": "A simple mod that adds all 16 colors of Stone and Cobblestone!",
+    "version": "1.2.1",
+    "mcversion": "1.4.6",
+    "url": "http://www.minecraftforum.net/topic/1630312-dylangores-mods/",
+    "updateUrl": "",
+    "authors": ["DylanGore"],
+    "credits": "Created by DylanGore, thanks to the forge team and to cpw for FML which makes minecraft easier to mod.",
+    "logoFile": "",
+    "screenshots": [],
+    "parent": "",
+    "requiredMods": ["Forge"],
+    "dependencies": [],
+    "dependants": [],
+    "useDependencyInformation": "false"
+  }]
 }
