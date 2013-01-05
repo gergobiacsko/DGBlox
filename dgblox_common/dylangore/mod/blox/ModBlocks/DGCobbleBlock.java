@@ -18,7 +18,7 @@ import dylangore.mod.blox.Misc.DGTab;
 
 
 public class DGCobbleBlock extends Block {
-	public static boolean BloxTabEnabled = true;
+	
 	public DGCobbleBlock (int id) {
 		super(id, Material.rock);
 		setBlockName("DGCobble - ");

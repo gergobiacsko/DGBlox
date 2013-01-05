@@ -14,7 +14,7 @@ public class DGTab extends CreativeTabs
 	}
 	@Override
 	public ItemStack getIconItemStack() {
-	    return new ItemStack(DGBlox.DGStoneBlock);
+	    return new ItemStack(DGBlox.blockStone);
 	}
 
 }
