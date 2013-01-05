@@ -1,8 +1,8 @@
 package dylangore.mod.blox;
 
 public class CommonProxy {
-    public static String ITEMS_PNG = "/textures/items.png";
-    public static String BLOCK_PNG = "/textures/blocks.png";
+    public static String ITEMS_PNG = "/dylangore/textures/items.png";
+    public static String BLOCK_PNG = "/dylangore/textures/blocks.png";
     
     // Client stuff
     public void registerRenderers() {
