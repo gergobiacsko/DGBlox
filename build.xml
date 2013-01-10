@@ -13,7 +13,6 @@
 		<copy todir="${dir.development}\mcp\src\minecraft">
 			<fileset dir="${dir.development}\source\DGBlox\dgblox_common\" />
 		</copy>
-		<replace dir="${dir.development}\mcp\src\minecraft" token="@VERSION@" value="${release.mod.version}" />
 	</target>
 	
 	<target name="recompile">
@@ -55,7 +54,7 @@
 		
 		<!-- Build the jar -->
 		<mkdir dir="${dir.share}\${release.minecraft.version}\${release.mod.version}" />
-		<jar destfile="${dir.share}\${release.minecraft.version}\${release.mod.version}\DGBlox-universal-${release.mod.version}.jar">
+		<jar destfile="${dir.share}\${release.minecraft.version}\${release.mod.version}\DGBlox-universal-${release.mod.version}[${release.minecraft.version}].jar">
 			<fileset dir="${dir.development}\mcp\src\common\"	includes="mcmod.info" />
 			<fileset dir="${dir.development}\mcp\reobf\minecraft" />
 		</jar>

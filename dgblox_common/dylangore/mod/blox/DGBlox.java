@@ -20,7 +20,7 @@ import dylangore.mod.blox.ModBlocks.DGCobbleBlock;
 import dylangore.mod.blox.ModBlocks.DGCobbleBlock_Item;
 
 //Mod Info
-@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.2.1")
+@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.2.2")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class DGBlox {
 
