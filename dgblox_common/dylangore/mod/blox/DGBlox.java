@@ -29,7 +29,7 @@ public class DGBlox {
 	public static CreativeTabs DGTab = new DGTab("BloxTab");
 	
 	//Colored Stone Block
-	public static int DGStoneBlockId = 502;
+	public static int DGStoneBlockId = 2100;
 	public static Block blockStone = new DGStoneBlock(DGStoneBlockId).setHardness(1.5F).setResistance(10.0F);
 	public static final String[] DGStoneBlockNames = { "White Stone",
 		"Orange Stone", "Magenta Stone", "Light Blue Stone",
@@ -39,7 +39,7 @@ public class DGBlox {
 		"Red Stone", "Black Stone" };
 	
 	//Colored Cobble Block
-	public static int DGCobbleBlockId = 503;
+	public static int DGCobbleBlockId = 2101;
 	public static Block blockCobble = new DGCobbleBlock(DGCobbleBlockId).setHardness(1.5F).setResistance(10.0F);
 	public static final String[] DGCobbleBlockNames = { "White Cobblestone",
 		"Orange Cobblestone", "Magenta Cobblestone", "Light Blue Cobblestone",

@@ -5,6 +5,7 @@
 *.pydevproject
 .project
 .metadata
+Releases/1.4.7/1.2.2[GoreCraft]
 bin/
 tmp/
 *.tmp
