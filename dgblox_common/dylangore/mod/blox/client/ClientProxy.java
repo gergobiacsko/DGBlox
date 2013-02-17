@@ -1,7 +1,7 @@
-package dylangore.mod.blox;
+package dylangore.mod.blox.client;
 
 import net.minecraftforge.client.MinecraftForgeClient;
-import dylangore.mod.blox.CommonProxy;
+import dylangore.mod.blox.common.CommonProxy;
 
 public class ClientProxy extends CommonProxy {
         
