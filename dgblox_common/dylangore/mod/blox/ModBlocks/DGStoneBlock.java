@@ -10,9 +10,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 import dylangore.mod.blox.DGBlox;
-import dylangore.mod.blox.CommonProxy;
-import dylangore.mod.blox.ClientProxy;
 import dylangore.mod.blox.Misc.DGTab;
+import dylangore.mod.blox.client.ClientProxy;
+import dylangore.mod.blox.common.CommonProxy;
 
 
 

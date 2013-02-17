@@ -17,16 +17,21 @@ import dylangore.mod.blox.common.CommonProxy;
 
 
 
-public class DGCobbleBlock extends Block {
-	
-	public DGCobbleBlock (int id) {
+public class DGStoneBrickBlock extends Block {
+	public static boolean BloxTabEnabled = true;
+	public DGStoneBrickBlock (int id) {
 		super(id, Material.rock);
-		setBlockName("DGCobble - ");
-		setCreativeTab(DGBlox.DGTab);
+		setBlockName("DGStoneBrick - ");
+		if(BloxTabEnabled = true){
+			setCreativeTab(DGBlox.DGTab);
+		}
+		else{setCreativeTab(CreativeTabs.tabBlock);}
+		
 	}
+	
 	@Override
 	public int getBlockTextureFromSideAndMetadata (int side, int metadata) {
-		return 16 + metadata;
+		return 32 + metadata;
 	}
 	
 	@Override
