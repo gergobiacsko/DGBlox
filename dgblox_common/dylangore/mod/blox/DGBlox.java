@@ -26,7 +26,7 @@ import dylangore.mod.blox.crafting.ColoredStoneBrick;
 import dylangore.mod.blox.crafting.ColoredStoneRecipes;
 
 //Mod Info
-@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.3.0")
+@Mod(modid = "DGBlox", name = "DylanGore's Blox Mod", version = "1.3.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class DGBlox {
 
@@ -65,6 +65,20 @@ public class DGBlox {
 		"Red Stone Bricks", "Black Stone Bricks"};
 
 
+	@Mod.PreInit
+	public void config(FMLPreInitializationEvent event) {
+		// Config File
+		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
+		config.load();
+			int DGStoneID = config.getBlock("Colored Stone", 2100).getInt();
+			int DGCobbeID = config.getBlock("Colored Cobblestone", 2101).getInt();
+			int DGStoneBrickID = config.getBlock("Colored Stone Bricks", 2102).getInt();
+		config.save();
+
+		//Console Print
+		System.out.println("DylanGore's Colored Blox Mod has been loaded");
+	}
+	
 	@Mod.Init
 	public void load(FMLInitializationEvent event) {
 	//Game Registry
@@ -101,19 +115,5 @@ public class DGBlox {
 		//Colored Stone Bricks
 		GameRegistry.registerBlock(blockStoneBrick, DGStoneBrickBlock_Item.class,
 				"DG_StoneBrick");
-	}
-
-	@Mod.PreInit
-	public void config(FMLPreInitializationEvent event) {
-		// Config File
-		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-		config.load();
-		int DGStoneBlockID = config.get("Colored Blox","Colored Stone" , 502 ).getInt();
-		int DGCobbleBlockID = config.get("Colored Blox","Colored Cobblestone" , 503 ).getInt();
-		int DGStoneBrickBlockID = config.get("Colored Blox","Colored Stone Bricks" , 504 ).getInt();
-		config.save();
-
-		//Console Print
-		System.out.println("DylanGore's Colored Blox Mod has been loaded");
 	}
 }
